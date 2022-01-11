@@ -5,9 +5,12 @@ import AddToCardIcon from "../assets/icons/add_card.svg"
 
 const ListItem = () => {
     return(
-        <div>
-            <img src= "/assets/placeholder.jpg" alt="Some title"/>
-            
+        
+        <div className={"item-card"}>
+            <img className={"img-fluid"} src="/assets/placeholder.jpg" alt="Some other text"/>
+            <div className={"item-card__information"}>
+            <div className={"pricing"}>
+
             <div>
                 <span>
                     $340
@@ -23,12 +26,14 @@ const ListItem = () => {
                     <span>
                         Add to Card
                     </span>
-                    <img src={AddToCardIcon} alt="Cart Item"/>
+                    <img src={AddToCardIcon} alt="Cart Item" />
                 </button>
                 <h3>
                     Title of the Item
                 </h3>
             </div>
+        </div>
+        </div>
         </div>
     ) 
 }
